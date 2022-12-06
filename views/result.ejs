@@ -1,0 +1,14 @@
+<%- include("partials/header"); -%>
+
+<div class="header">
+  <h1>Current weather in <%= cityName%></h1>
+</div>
+<div class="result">
+  <img src="<%= weatherIcon %>" alt="">
+  <h2><%= temperature%> °C</h2>
+</div>
+<div class="back">
+    <a class="btn btn-dark btn-lg" href="/" role="button">Try another city</a>
+</div>
+
+<%- include("partials/footer"); -%>
