@@ -29,7 +29,6 @@ app.post("/", function (req, res) {
     "&units=" +
     unit;
   https.get(url, function (response) {
-    console.log(response.statusCode);
     response.on("data", function (data) {
       const weatherData = JSON.parse(data);
       if (weatherData.main !== undefined) {
